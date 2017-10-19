@@ -27,3 +27,8 @@ This checks resource and service status.
 
 ## for Every Server
 * Resource Check: send the results of `df -h` and `free -m` as e-mail.
+
+## Customization
+* If you want to check another services, change `root_setup.sh` and  `service_check.pl`.
+  * `root_setup.sh` defines programs to be checked according to the server type (ap or mail).
+  * `service_check.pl` defines program information to be checked.
